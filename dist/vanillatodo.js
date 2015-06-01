@@ -1,20 +1,19 @@
-var myButton  = "button"
-var todoInput = "input"
-var	todoForm = "form"
+
+var myButton = document.getElementById("button")
+var todoInput = document.getElementById("input")
+var todoForm = document.getElementById("list")
+
 
 var todoList = []
-
-	function onButtonClick(e){
-
+myButton.addEventListener('click', onButtonClick);
 
 
-myButton.addEventListener('todoInput', onButtonClick);
-
-var myButton = document.getElementById('input')
-
-
+function onButtonClick(e){
+	 todoForm.innerHTML = todoForm.innerHTML + "<br>" + todoInput.value;
+	 todoInput.value = ""
+	console.log(todoInput.value);
 }
-
+	
 
 //     function onButtonClick(eventObj) {
     
@@ -26,6 +25,6 @@ var myButton = document.getElementById('input')
 // myButton.addEventListener('To do list', onButtonClick);
 
 // var parent = document.getElementById('parent');
-// parent.addEventListener('click', onButtonClick);    
+// parent.addEventListener('click', onButtonClick); 
 
-    
+
