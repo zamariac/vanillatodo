@@ -9,22 +9,9 @@ myButton.addEventListener('click', onButtonClick);
 
 
 function onButtonClick(e){
-	 todoForm.innerHTML = todoForm.innerHTML + "<br>" + todoInput.value;
+
+	 todoForm.innerHTML = todoForm.innerHTML + "<li>" + todoInput.value + "</li>";
 	 todoInput.value = ""
-	console.log(todoInput.value);
+	 console.log(todoInput.value);
 }
 	
-
-//     function onButtonClick(eventObj) {
-    
-//   document.getElementById('To do list').style.fontStyle="italic";
-// }
-
-// var myButton = document.getElementById('To do list');
-
-// myButton.addEventListener('To do list', onButtonClick);
-
-// var parent = document.getElementById('parent');
-// parent.addEventListener('click', onButtonClick); 
-
-
